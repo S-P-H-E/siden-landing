@@ -47,7 +47,7 @@ const content = [
   
 export function Features() {
   return (
-    <div className="flex flex-col items-center w-full justify-center pt-40 gap-4">
+    <div className="flex flex-col items-center w-full justify-center pt-20 gap-4">
         <div className="px-4 py-2 w-fit rounded-full bg-[var(--border)] text-white font-semibold">
             <p>Features</p>
         </div>
