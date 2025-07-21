@@ -1,10 +1,15 @@
 import Brands from "@/components/Brand";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="flex flex-col h-[100dvh] items-center justify-center">
-      <h1 className="text-5xl font-bold">Hello World</h1>
+    <>
+      <Navbar />
+      <Hero />
       <Brands />
-    </div>
+      <Testimonials />
+    </>
   );
 }

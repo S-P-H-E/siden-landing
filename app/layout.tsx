@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Siden",
-  description: "An AI platform for your business.",
+  title: "Siden - The Most Unfair Advantage in Business - The Team That Outworks Everyone",
+  description: "The most unfair advantage in business. The team that outworks everyone, allowing humans and AI to work together. Transform your business with Siden's powerful AI collaboration platform.",
 };
 
 export default function RootLayout({
