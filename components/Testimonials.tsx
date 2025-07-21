@@ -47,7 +47,7 @@ export default function Testimonials() {
     ]
 
     return (
-        <div className="flex flex-col items-center w-full justify-center py-40 gap-4">
+        <div className="flex flex-col items-center w-full justify-center pb-40 pt-20 gap-4">
             <div className="px-4 py-2 rounded-full bg-[var(--border)] text-white font-semibold">
                 <p>Testimonials</p>
             </div>
