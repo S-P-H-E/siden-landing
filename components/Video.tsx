@@ -58,30 +58,31 @@ export default function Video() {
             />
 
             {/* LOADER */}
-            {!isLoaded && (
-                <div className="absolute inset-0 bg-black/50 flex items-center justify-center z-20">
-                    <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
+            {isPaused && showPlayButton && (
+                <div className="absolute inset-0 bg-black/70 flex items-center justify-center z-20 rounded-2xl">
+                    {/* <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" /> */}
                 </div>
             )}
 
             {/* PLAY BUTTON */}
-            {/* {isPaused && showPlayButton && (
+            {isPaused && showPlayButton && (
                 <div className="absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-500">
                     <button onClick={handlePlay} aria-label="Play video">
-                    <div className="cursor-pointer bg-black text-white px-4 py-2 rounded-xl flex items-center gap-2 shadow-xl backdrop-blur-sm">
+                    <div className="cursor-pointer shadow-xl border border-[var(--border)] bg-blur text-[var(--foreground)] px-4 py-2 rounded-xl flex items-center gap-2 backdrop-blur-sm">
                         <FaPlay />
                         Watch Intro Video
                     </div>
                     </button>
                 </div>
-            )} */}
+            )}
 
             {/* PAUSE BUTTON */}
             {!isPaused && hasUserStarted && (
             <div className="absolute top-4 right-4 z-30">
                 <button onClick={handlePause} aria-label="Pause video">
-                <div className="bg-gray-800/80 hover:bg-gray-700/80 text-white p-2 rounded-full shadow-xl backdrop-blur-sm transition">
+                <div className="cursor-pointer shadow-xl flex border border-[var(--border)] bg-blur px-3 py-2 rounded-xl backdrop-blur-sm transition">
                     <IoIosPause className="text-2xl" />
+                    Pause
                 </div>
                 </button>
             </div>
