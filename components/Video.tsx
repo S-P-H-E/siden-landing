@@ -42,7 +42,7 @@ export default function Video() {
     setShowPlayButton(true)
   }
   return (
-        <div className="relative w-[700px] rounded-2xl shadow-xl">
+        <div className="relative w-[700px] rounded-2xl shadow-black/70 shadow-xl">
             {/* VIDEO */}
             <video
             ref={videoRef}
@@ -59,7 +59,7 @@ export default function Video() {
 
             {/* LOADER */}
             {isPaused && showPlayButton && (
-                <div className="absolute inset-0 bg-black/70 flex items-center justify-center z-20 rounded-2xl">
+                <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-20 rounded-2xl">
                     {/* <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" /> */}
                 </div>
             )}
@@ -68,9 +68,8 @@ export default function Video() {
             {isPaused && showPlayButton && (
                 <div className="absolute inset-0 flex items-center justify-center z-20 transition-opacity duration-500">
                     <button onClick={handlePlay} aria-label="Play video">
-                    <div className="cursor-pointer shadow-xl border border-[var(--border)] bg-blur text-[var(--foreground)] px-4 py-2 rounded-xl flex items-center gap-2 backdrop-blur-sm">
-                        <FaPlay />
-                        Watch Intro Video
+                    <div className="cursor-pointer text-[var(--background)] shadow-xl md:hover:scale-110 duration-500 rounded-xl flex items-center gap-2">
+                        <FaPlay size={35}/>
                     </div>
                     </button>
                 </div>
@@ -80,7 +79,7 @@ export default function Video() {
             {!isPaused && hasUserStarted && (
             <div className="absolute top-4 right-4 z-30">
                 <button onClick={handlePause} aria-label="Pause video">
-                <div className="cursor-pointer shadow-xl flex border border-[var(--border)] bg-blur px-3 py-2 rounded-xl backdrop-blur-sm transition">
+                <div className="cursor-pointer shadow-xl flex border border-[var(--border)] text-[var(--background)] bg-blur px-3 py-2 rounded-xl backdrop-blur-sm transition">
                     <IoIosPause className="text-2xl" />
                     Pause
                 </div>

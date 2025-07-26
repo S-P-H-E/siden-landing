@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 * {
-    --background: #121212;
-    --foreground: #fff;
+    --background: #fff;
+    --foreground: #000;
     --description: #999999;
-    --border: #333333;
+    --border: #e8e8e8;
     --accent: #6466eb;
 }
 

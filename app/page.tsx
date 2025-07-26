@@ -5,19 +5,33 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 
 export default function Home() {
   return (
     <>
       <div className="relative">
-        <Banner />
+        {/* <Banner /> */}
         <Navbar />
       </div>
-      <Hero />
-      <Brands />
-      <Features />
-      <Testimonials />
-      <Footer />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="brands">
+        <Brands />
+      </div>
+      <div id="features">
+        <Features />
+      </div>
+      <div id="testimonials">
+        <Testimonials />
+      </div>
+      <div id="faq">
+        <FAQ />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
     </>
   );
 }
