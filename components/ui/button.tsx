@@ -1,0 +1,11 @@
+import Link from "next/link";
+import { IoArrowForwardOutline } from "react-icons/io5";
+
+export default function Button({href, children}: {href: string, children: React.ReactNode}) {
+    return (
+        <Link href={href} className="flex items-center gap-2 rounded-md bg-[var(--accent)] text-[var(--background)] px-6 py-3 font-semibold shadow-[#3e2bbd]/50 shadow-lg group">
+            {children}
+            <IoArrowForwardOutline className="-rotate-45 group-hover:rotate-0 transition-transform duration-300"/>    
+        </Link>
+    )
+}

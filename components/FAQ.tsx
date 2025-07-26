@@ -31,7 +31,7 @@ export default function FAQ() {
   return (
     <section className="w-full flex flex-col items-center justify-center py-24 bg-white">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Frequently Asked Questions</h2>
-      <p className="text-lg text-[var(--description)] text-center mb-14 max-w-xl">Find answers to common questions about Siden.</p>
+      <p className="text-lg text-[var(--description)] text-center mb-14 max-w-xl">Find answers to common questions about Siden. Learn how it works, what it can do for your business, how to integrate it into your workflow, and how teams are using it to gain a competitive edge.</p>
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-6">
         {faqs.map((faq, idx) => (
           <div
@@ -41,13 +41,21 @@ export default function FAQ() {
             {/* Accent bar or icon */}
             <div className={`h-full w-2 transition-all duration-300 ${open === idx ? 'bg-[var(--accent)]' : 'bg-gray-200'}`}/>
             <button
-              className="flex-1 w-full text-left px-8 py-7 focus:outline-none flex flex-col gap-2"
+              className="flex-1 w-full text-left px-8 py-7 focus:outline-none flex flex-col gap-2 cursor-pointer"
               onClick={() => setOpen(open === idx ? null : idx)}
               aria-expanded={open === idx}
               aria-controls={`faq-answer-${idx}`}
             >
               <div className="flex items-center justify-between">
-                <span className="font-bold text-xl md:text-2xl text-[var(--foreground)] group-hover:text-[var(--accent)] transition-colors duration-200">{faq.question}</span>
+                <span
+                  className={`font-bold text-xl md:text-2xl transition-colors duration-200 ${
+                    open === idx
+                      ? "text-[var(--accent)]"
+                      : "text-[var(--foreground)] group-hover:text-[var(--accent)]"
+                  }`}
+                >
+                  {faq.question}
+                </span>
                 <span className={`ml-4 transition-transform duration-300 text-2xl ${open === idx ? 'rotate-180 text-[var(--accent)]' : 'rotate-0 text-gray-400'}`}>
                 <IoIosArrowDown />
                 </span>

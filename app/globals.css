@@ -15,5 +15,5 @@ body {
 
 .bg-blur {
     backdrop-filter: blur(4px);
-    background-color: #383838a5;
+    /* background-color: #383838a5; */
 }
