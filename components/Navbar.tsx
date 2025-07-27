@@ -9,7 +9,6 @@ const navLinks = [
   { id: "features", label: "Features" },
   { id: "testimonials", label: "Testimonials" },
   { id: "faq", label: "FAQ" },
-  { id: "footer", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -62,7 +61,7 @@ export default function Navbar() {
           <Image src="/Logo.svg" alt="Siden Logo" className="brightness-0" width={25} height={25} />
           <h1 className="text-2xl font-bold select-none">Siden</h1>
         </div>
-        <div className="flex items-center gap-8 w-1/2">
+        <div className="flex items-center justify-center gap-8 w-1/2">
           {navLinks.map((link) => (
             <button
               key={link.id}

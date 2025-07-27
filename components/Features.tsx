@@ -7,26 +7,26 @@ const features = [
     title: "Agent Swarms",
     description:
       "Deploy multiple AI agents that work together to complete complex business tasks. From handling support tickets to analyzing data, Siden agents collaborate like a real team.",
-    image: "/brands/amazon.svg",
+    image: "/features/01.mp4",
     alt: "Agent Swarms Illustration",
   },
   {
     title: "Hyper-Personalization",
     description:
       "Siden learns from your business data to deliver responses and decisions tailored exactly to your workflows, tone, and goals. No generic AI responses—just your brand amplified.",
-    image: "/brands/meta.svg",
+    image: "/features/02.mp4",
     alt: "Hyper-Personalization Illustration",
   },
   {
     title: "50+ Integrations",
     description:
       "Siden connects with all your tools—from CRMs to Notion to Google Workspace—so your agents always have full context and can act across platforms.",
-    image: "/brands/openai.svg",
+    image: "/features/03.mp4",
     alt: "Integrations Illustration",
   },
 ];
 
-const INTERVAL = 6000;
+const INTERVAL = 7000;
 
 export function Features() {
   const [current, setCurrent] = useState(0);
@@ -58,7 +58,7 @@ export function Features() {
         Siden agents understand everything about your business and can action tasks in the tools you use everyday.
       </p>
       <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-        
+
         <div className="flex-1 w-full md:w-1/2 flex flex-col items-start justify-center min-h-[320px]">
           <div className="flex flex-col gap-2 w-full relative">
             {features.map((feature, idx) => (
@@ -102,13 +102,17 @@ export function Features() {
         </div>
 
         <div className="flex-1 w-full md:w-1/2 flex items-center justify-center min-h-[320px]">
-          <div className="relative w-full max-w-md aspect-[4/3] flex items-center justify-center bg-gray-50 rounded-xl overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-md aspect-[5/4] flex items-center justify-center bg-white rounded-xl overflow-hidden shadow-lg">
             {features.map((feature, idx) => (
-              <img
+              <video
                 key={feature.image}
                 src={feature.image}
-                alt={feature.alt}
-                className={`transition-all duration-700 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain p-6
+                loop
+                autoPlay
+                playsInline
+                muted
+                controls={false}
+                className={`transition-all duration-700 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain
                   ${idx === current ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-95 pointer-events-none z-0'}`}
                 draggable={false}
               />

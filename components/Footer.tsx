@@ -62,13 +62,13 @@ export default function Footer() {
 
                 </div>
             </div>
-            <div className="flex flex-col relative items-center h-[170px] overflow-hidden">
+            <div className="flex flex-col relative items-center h-[200px] overflow-hidden">
                 {/* <Link href="https://siden.ai/auth?mode=signup" className="bg-[#ececec] text-[#727272] font-semibold px-6 py-4 rounded-2xl flex items-center gap-2 z-[20] cursor-pointer">
                     JOIN WAITLIST
                     <FiArrowRight />
                 </Link> */}
                 <div className="absolute bottom-0 w-full bg-gradient-to-t from-[var(--background)] to-transparent z-10 h-[100px]"/>
-                <h1 className="absolute -top-30 text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden AI</h1>
+                <h1 className="absolute -top-20 text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden AI</h1>
             </div>
         </>
     )
