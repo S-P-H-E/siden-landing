@@ -56,12 +56,12 @@ export default function Navbar() {
     <div
       className={`w-full p-6 fixed top-0 left-0 z-30 transition-transform duration-500 ease-in-out
         ${show ? 'translate-y-0' : '-translate-y-full'}`}>
-      <div className="flex justify-between w-[1500px] mx-auto bg-blur py-4 px-6 rounded-full">
+      <div className="flex flex-row items-center justify-between w-full md:w-[1500px] mx-auto bg-blur py-4 px-4 md:px-6 rounded-full gap-4">
         <div className="w-1/2 flex items-center gap-3">
           <Image src="/Logo.svg" alt="Siden Logo" className="brightness-0" width={25} height={25} />
           <h1 className="text-2xl font-bold select-none">Siden</h1>
         </div>
-        <div className="flex items-center justify-center gap-8 w-1/2">
+        <div className="hidden md:flex items-center justify-center gap-4 md:gap-8 w-full md:w-1/2">
           {navLinks.map((link) => (
             <button
               key={link.id}
@@ -75,7 +75,7 @@ export default function Navbar() {
             </button>
           ))}
         </div>
-        <div className="w-1/2 flex items-center justify-end">
+        <div className="flex items-center justify-end w-full md:w-1/2">
           <Button href="https://siden.ai/auth?mode=signup">JOIN WAITLIST</Button>
         </div>
       </div>

@@ -28,7 +28,7 @@ export default function Footer() {
     return (
         <>
             <div className="border-t border-t-[var(--border)] p-10">
-                <div className="w-[1200px] mx-auto flex justify-between items-start">
+                <div className="w-full max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-4">
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-2">
                             <Image src="/Logo.svg" alt="Siden Logo" className="brightness-0" width={25} height={25} />
@@ -61,13 +61,13 @@ export default function Footer() {
 
                 </div>
             </div>
-            <div className="flex flex-col relative items-center h-[200px] overflow-hidden">
+            <div className="flex flex-col relative items-center h-[100px] md:h-[200px] overflow-hidden">
                 {/* <Link href="https://siden.ai/auth?mode=signup" className="bg-[#ececec] text-[#727272] font-semibold px-6 py-4 rounded-2xl flex items-center gap-2 z-[20] cursor-pointer">
                     JOIN WAITLIST
                     <FiArrowRight />
                 </Link> */}
                 <div className="absolute bottom-0 w-full bg-gradient-to-t from-[var(--background)] to-transparent z-10 h-[100px]"/>
-                <h1 className="absolute -top-20 text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden AI</h1>
+                <h1 className="absolute -top-[10px] md:-top-10 text-8xl md:text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden AI</h1>
             </div>
         </>
     )

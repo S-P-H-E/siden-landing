@@ -14,7 +14,7 @@ export default function Brands() {
         "/brands/siemens.svg",
     ]
     return (
-        <div className="w-[900px] mx-auto p-10">
+        <div className="w-full max-w-[900px] mx-auto px-4 py-10 md:px-4 md:py-10">
             <h1 className="text-center text-[#7c7c7c] font-semibold">Trusted by teams at</h1>
             <div className="w-full py-10">
             <Marquee gradient={true} gradientColor="#fff">

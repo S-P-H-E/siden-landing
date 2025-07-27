@@ -42,7 +42,7 @@ export default function Video() {
     setShowPlayButton(true)
   }
   return (
-        <div className="relative w-[700px] rounded-2xl shadow-black/70 shadow-xl">
+        <div className="relative w-full max-w-[400px] md:max-w-[700px] rounded-2xl shadow-black/70 shadow-xl">
             {/* VIDEO */}
             <video
             ref={videoRef}

@@ -30,7 +30,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-24 bg-[#f9f8f6]">
+    <section className="w-full flex flex-col items-center justify-center py-24 bg-[#f9f8f6] px-4">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">Frequently Asked Questions</h2>
       <p className="text-lg text-[var(--description)] text-center mb-14 max-w-xl">Find answers to common questions about Siden. Learn how it works, what it can do for your business, how to integrate it into your workflow, and how teams are using it to gain a competitive edge.</p>
       <div className="w-full max-w-2xl mx-auto flex flex-col gap-6">

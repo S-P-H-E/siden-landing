@@ -48,13 +48,13 @@ export default function Testimonials() {
     ]
 
     return (
-        <div className="flex flex-col items-center w-full justify-center pb-40 pt-20 gap-4">
+        <div className="flex flex-col items-center w-full justify-center pb-40 pt-20 gap-4 px-4">
             {/* <Tag>
                 Testimonials
             </Tag> */}
-            <h1 className="text-5xl font-bold text-center w-[900px]">What our users say</h1>
-            <p className="text-lg text-[var(--description)] text-center mb-8 max-w-2xl">Real stories from teams and founders who use Siden to work smarter, faster, and happier every day.</p>
-            <div className="w-[1200px] mx-auto">
+            <h1 className="text-3xl md:text-5xl font-bold text-center max-w-[900px] w-full px-4">What our users say</h1>
+            <p className="text-lg text-[var(--description)] text-center mb-8 max-w-2xl px-4">Real stories from teams and founders who use Siden to work smarter, faster, and happier every day.</p>
+            <div className="w-full max-w-[1200px] mx-auto px-4 md:px-4">
                 {["right", "left"].map(d => (
                     <Marquee
                         key={d}

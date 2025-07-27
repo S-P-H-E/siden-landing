@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Tag from "./ui/tag";
+import Marquee from "react-fast-marquee";
+import Image from "next/image";
 
 const features = [
   {
@@ -22,6 +24,13 @@ const features = [
     description:
       "Siden connects with all your tools—from CRMs to Notion to Google Workspace—so your agents always have full context and can act across platforms.",
     image: "/features/03.mp4",
+    alt: "Integrations Illustration",
+  },
+  {
+    title: "Question Answering",
+    description:
+      "Siden connects with all your tools—from CRMs to Notion to Google Workspace—so your agents always have full context and can act across platforms.",
+    image: "/features/04.mp4",
     alt: "Integrations Illustration",
   },
 ];
@@ -48,15 +57,28 @@ export function Features() {
     // eslint-disable-next-line
   }, []);
 
+  const tools = [
+    "/tools/notion.svg",
+    "/tools/gmail.svg",
+    "/tools/slack.svg",
+    "/tools/calendar.svg",
+    "/tools/docs.svg",
+    "/tools/drive.svg",
+    "/tools/github.svg",
+    "/tools/zoom.svg",
+]
+
   return (
-    <section className="w-full flex flex-col items-center justify-center py-20 bg-[#f9f8f6]">
+    <section className="w-full flex flex-col items-center justify-between pt-20 bg-[#f9f8f6] md:h-[950px] h-auto pb-20 px-4">
       {/* <Tag>Features</Tag> */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-        Focus on what you love.<br />Let the agents handle the rest.
-      </h2>
-      <p className="text-lg text-[var(--description)] text-center mb-12 max-w-2xl">
-        Siden agents understand everything about your business and can action tasks in the tools you use everyday.
-      </p>
+      <div>
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          Focus on what you love. <br className="hidden md:block"/>Let the agents handle the rest.
+        </h2>
+        <p className="text-lg text-[var(--description)] text-center mb-12 max-w-2xl">
+          Siden agents understand everything about your business and can action tasks in the tools you use everyday.
+        </p>
+      </div>
       <div className="w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
 
         <div className="flex-1 w-full md:w-1/2 flex flex-col items-start justify-center min-h-[320px]">
@@ -120,6 +142,22 @@ export function Features() {
           </div>
         </div>
       </div>
+
+      {/* Tools */}
+      <div className="w-full max-w-[900px] mx-auto px-4 py-10 md:px-4">
+            <h1 className="text-center text-[#7c7c7c] font-semibold">Agents work in all of your favorite tools</h1>
+            <div className="w-full py-10">
+            <Marquee gradient={true} gradientColor="#f9f8f6">
+                <div className="flex items-center">
+                {tools.map((tools, i)=>(
+                    <div key={i}>
+                        <Image src={tools} alt="tool" width="25" height="0" className='mx-12 w-[25px] h-[25px] object-contain select-none' />
+                    </div>
+                ))}
+                </div>
+            </Marquee>
+            </div>
+        </div>
     </section>
   );
 }
