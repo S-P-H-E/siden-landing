@@ -33,7 +33,7 @@ export default function NotFound() {
         </h3>
         
         <p className="text-[var(--description)] text-base md:text-lg mb-8 max-w-md mx-auto">
-          The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved. Let&apos;s get you back on track.
         </p>
       </div>
 
@@ -46,7 +46,7 @@ export default function NotFound() {
           
           <ul className="list-disc list-inside text-[var(--description)] space-y-2 text-left">
             <li>Check the URL for any typos</li>
-            <li>Use the navigation menu to find what you're looking for</li>
+            <li>Use the navigation menu to find what you&apos;re looking for</li>
             <li>Return to our homepage to explore our services</li>
             <li>Contact our support team for assistance</li>
           </ul>

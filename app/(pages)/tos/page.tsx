@@ -29,7 +29,7 @@ export default function TOS() {
                 <div className="space-y-4">
                     <h2 className="text-2xl md:text-3xl font-semibold text-[var(--foreground)]">Acceptance of Terms</h2>
                     <p className="text-[var(--description)] text-base md:text-lg">
-                        By accessing and using Siden's services, you accept and agree to be bound by the terms and provision of this agreement.
+                        By accessing and using Siden&apos;s services, you accept and agree to be bound by the terms and provision of this agreement.
                     </p>
                 </div>
 
