@@ -52,10 +52,9 @@ export default function Footer() {
                         </div>
                         <div className="flex flex-col gap-2">
                             <h1 className="font-bold select-none">Legal</h1>
-                            {/* TODO: Add links */}
                             <div className="flex flex-col gap-1 text-[var(--description)]">
-                                <Link href="/" className="hover:text-[var(--accent)] transition-colors duration-300">Privacy Policy</Link>
-                                <Link href="/" className="hover:text-[var(--accent)] transition-colors duration-300">Terms of Service</Link>
+                                <Link href="/policy" className="hover:text-[var(--accent)] transition-colors duration-300">Privacy Policy</Link>
+                                <Link href="/tos" className="hover:text-[var(--accent)] transition-colors duration-300">Terms of Service</Link>
                             </div>
                         </div>
                     </div>

@@ -49,7 +49,7 @@ export function Features() {
   }, []);
 
   return (
-    <section className="w-full flex flex-col items-center justify-center py-20 bg-white dark:bg-[var(--background)]">
+    <section className="w-full flex flex-col items-center justify-center py-20 bg-[#f9f8f6]">
       {/* <Tag>Features</Tag> */}
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
         Focus on what you love.<br />Let the agents handle the rest.
@@ -102,7 +102,7 @@ export function Features() {
         </div>
 
         <div className="flex-1 w-full md:w-1/2 flex items-center justify-center min-h-[320px]">
-          <div className="relative w-full max-w-md aspect-[5/4] flex items-center justify-center bg-white rounded-xl overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-md aspect-[6/4] flex items-center justify-center border border-[var(--border)] bg-white rounded-xl overflow-hidden shadow-lg">
             {features.map((feature, idx) => (
               <video
                 key={feature.image}

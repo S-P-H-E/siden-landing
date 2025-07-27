@@ -79,7 +79,7 @@ export default function Video() {
             {!isPaused && hasUserStarted && (
             <div className="absolute top-4 right-4 z-30">
                 <button onClick={handlePause} aria-label="Pause video">
-                <div className="cursor-pointer shadow-xl flex border border-[var(--border)] text-[var(--background)] bg-blur px-3 py-2 rounded-xl backdrop-blur-sm transition">
+                <div className="cursor-pointer shadow-xl flex border border-[#222224] text-[var(--background)] bg-blur px-3 py-2 rounded-xl backdrop-blur-sm transition">
                     <IoIosPause className="text-2xl" />
                     Pause
                 </div>
