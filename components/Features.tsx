@@ -69,7 +69,7 @@ export function Features() {
 ]
 
   return (
-    <section className="w-full flex flex-col items-center justify-between pt-20 bg-[#f9f8f6] md:h-[950px] h-auto pb-20 px-4">
+    <section className="w-full flex flex-col items-center justify-between pt-20 bg-[#f9f8f6] md:h-[950px] h-auto px-4">
       {/* <Tag>Features</Tag> */}
       <div>
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
@@ -124,7 +124,7 @@ export function Features() {
         </div>
 
         <div className="flex-1 w-full md:w-1/2 flex items-center justify-center min-h-[320px]">
-          <div className="relative w-full max-w-md aspect-[6/4] flex items-center justify-center border border-[var(--border)] bg-white rounded-xl overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-md aspect-[6/4] flex items-center justify-center border border-[var(--border)] bg-white rounded-2xl overflow-hidden shadow-lg">
             {features.map((feature, idx) => (
               <video
                 key={feature.image}

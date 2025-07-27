@@ -37,7 +37,7 @@ export default function FAQ() {
         {faqs.map((faq, idx) => (
           <div
             key={faq.question}
-            className={`group relative flex items-start rounded-3xl shadow-lg border border-[var(--border)] bg-white transition-all duration-300 overflow-hidden ${open === idx ? 'ring-2 ring-[var(--accent)]' : ''}`}
+            className={`group relative flex items-start rounded-2xl shadow-lg border border-[var(--border)] bg-white transition-all duration-300 overflow-hidden ${open === idx ? 'ring-2 ring-[var(--accent)]' : ''}`}
           >
             {/* Accent bar or icon */}
             <div className={`h-full w-2 transition-all duration-300 ${open === idx ? 'bg-[var(--accent)]' : 'bg-gray-200'}`}/>
