@@ -67,7 +67,7 @@ export default function Footer() {
                     <FiArrowRight />
                 </Link> */}
                 <div className="absolute bottom-0 w-full bg-gradient-to-t from-[var(--background)] to-transparent z-10 h-[100px]"/>
-                <h1 className="absolute -top-[10px] md:-top-10 text-8xl md:text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden AI</h1>
+                <h1 className="absolute -top-[10px] md:-top-9 text-8xl md:text-[300px] font-extrabold text-[#e6e6e6] select-none">Siden</h1>
             </div>
         </>
     )

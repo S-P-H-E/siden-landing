@@ -7,7 +7,7 @@ import Button from "./ui/button";
 const navLinks = [
   { id: "hero", label: "Home" },
   { id: "features", label: "Features" },
-  { id: "testimonials", label: "Testimonials" },
+  // { id: "testimonials", label: "Testimonials" },
   { id: "faq", label: "FAQ" },
 ];
 
